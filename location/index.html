@@ -46,7 +46,7 @@
             zoom: 15
         });
         rider = $.urlParam('r')
-        drivers = $.urlParam('d').split("|")
+        drivers = $.urlParam('d').split(";")
         var riderLoc = rider.split(",")
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(riderLoc[0], riderLoc[1]),
